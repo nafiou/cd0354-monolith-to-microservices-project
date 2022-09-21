@@ -16,7 +16,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: nafiou18/reverseproxy:1.0
+      - image: nafiou18/reverseproxy:1.1
         name: reverseproxy
         imagePullPolicy: Always          
         resources:

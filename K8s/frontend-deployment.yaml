@@ -15,8 +15,8 @@ spec:
         app: front-end
     spec:
       containers:
-      - name: udagram-frontend
-        image: nafiou18/udagram-frontend:1.0
+      - name: front-end
+        image: nafiou18/udagram-frontend:v1
         resources:
           requests:
             memory: "64Mi"

@@ -1,34 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-feed
   labels:
-    app: backend-feed
+    service: backend-user
+  name: backend-user
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: backend-feed
+      app: backend-user
   template:
     metadata:
       labels:
-        app: backend-feed
+        app: backend-user
+        service: backend-user
     spec:
       containers:
-      - name: udagram-api-feed
-        image: nafiou18/udagram-api-feed:1.0
-        envFrom:
-          - configMapRef:
-              name: env-config
-          - secretRef:
-              name: env-secret
+      - image: nafiou18/udagram-api-user:1.0
+        name: backend-user 
+        imagePullPolicy: Always  
         resources:
           requests:
             memory: "1024Mi"
             cpu: "512m"
           limits:
             memory: "1500Mi"
-            cpu: "1000m" 
+            cpu: "1000m"     
+        envFrom:
+          - configMapRef:
+              name: env-config
+          - secretRef:
+              name: env-secret
         volumeMounts:
         - name: aws-secret
           mountPath: "/root/.aws/"
