@@ -3,7 +3,7 @@ services:
   reverseproxy:
     build:
       context: ./udagram-reverseproxy
-    image: nafiou18/reverseproxy:1.1
+    image: nafiou18/reverseproxy:1.2
   backend_user:
     build:
       context: ./udagram-api-user
