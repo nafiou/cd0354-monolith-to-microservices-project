@@ -22,6 +22,7 @@ coverage/
 www/
 node_modules/
 tmp/
+k8s/*secret*
 temp/
 platforms/
 plugins/
