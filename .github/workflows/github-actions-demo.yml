@@ -17,6 +17,6 @@ jobs:
       run: |
         docker push nafiou18/reverseproxy:1.2
         docker push nafiou18/udagram-api-user:1.0
-        docker push nafiou18/udagram-api-feed:1.0
+        docker push nafiou18/udagram-api-feed:1.1
         docker push nafiou18/udagram-frontend:v2
     
