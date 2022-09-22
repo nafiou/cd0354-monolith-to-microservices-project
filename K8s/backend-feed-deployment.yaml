@@ -16,7 +16,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-      - image: nafiou18/udagram-api-feed:1.1
+      - image: nafiou18/udagram-api-feed:1.2
         name: backend-feed 
         imagePullPolicy: Always  
         resources:
@@ -33,7 +33,7 @@ spec:
               name: env-secret
         volumeMounts:
         - name: aws-secret
-          mountPath: "~/.aws/"
+          mountPath: "/root/.aws/"
           readOnly: true        
       restartPolicy: Always
       volumes:

@@ -7,11 +7,11 @@ services:
   backend_user:
     build:
       context: ./udagram-api-user
-    image: nafiou18/udagram-api-user:1.0
+    image: nafiou18/udagram-api-user:1.1
   backend_feed:
     build:
       context: ./udagram-api-feed
-    image: nafiou18/udagram-api-feed:1.1
+    image: nafiou18/udagram-api-feed:1.2
   frontend:
     build:
       context: ./udagram-frontend
