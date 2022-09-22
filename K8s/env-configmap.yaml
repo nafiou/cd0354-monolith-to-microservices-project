@@ -6,9 +6,9 @@ metadata:
     app: backend
     tier: aws
 data:
-  POSTGRES_HOST: database-1.cxim7rnxqxiu.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: postgres.ckdqssk7ikaw.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: udagrams821822268499
+  AWS_BUCKET: udagram-408258221934
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing

@@ -4,16 +4,5 @@ kind: ClusterConfig
 metadata:
   name: udagramcluster
   region: us-east-1
-
-kubernetesNetworkConfig:
-  serviceIPv4CIDR: 10.0.0.0/16
-
-vpc:
-  clusterEndpoints:
-    publicAccess: true
-
-nodeGroups:
-  - name: ng-1
-    instanceType: m5.large
-    desiredCapacity: 2
-    volumeSize: 80
+  nodes-min: 2
+  node-max: 3
