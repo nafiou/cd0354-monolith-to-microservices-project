@@ -11,7 +11,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-    - name: docker --version
+    - name: building docker images
       run: docker-compose -f docker-compose-build.yaml build --parallel
     - name: push images
       run: |
