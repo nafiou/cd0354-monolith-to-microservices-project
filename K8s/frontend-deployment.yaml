@@ -5,7 +5,7 @@ metadata:
   labels:
     app: front-end
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: front-end
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: front-end
-        image: nafiou18/udagram-frontend:v2
+        image: nafiou18/udagram-frontend:v3
         resources:
           requests:
             memory: "64Mi"
